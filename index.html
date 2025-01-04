@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urbano storeid</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Urbano Store</h1>
+        <p>Koleksi Barang Terbaik Kami!!</p>
+    </header>
+    <nav>
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <ul id="nav-menu">
+            <li><a href="#home">Beranda</a></li>
+            <li><a href="#products">Produk</a></li>
+            <li><a href="#order">Pesan</a></li>
+            <li><a href="#testimonials">Testimoni</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h2>Selamat Datang</h2>
+        <p>Kami menyediakan barang-barang berkualitas dengan desain unik. Lihat koleksi kami di bawah!</p>
+    </section>
+
+     <!-- Pencarian -->
+     <section id="search">
+        <h2>Cari Produk</h2>
+        <input type="text" id="search-bar" placeholder="Cari nama produk..." oninput="searchProducts()">
+    </section>
+
+    <section id="products">
+        <h2>Koleksi Barang</h2>
+        <div class="filter">
+            <button onclick="filterItems('all')">Semua</button>
+            <button onclick="filterItems('kategori1')">Artikel</button>
+            <button onclick="filterItems('kategori2')">Kategori 2</button>
+        </div>
+        <div class="product kategori1">
+            <img src="image\WHITE FRONT.jpg" alt="Barang 1">
+            <h3>Genie jin aladin</h3>
+            <p>art genie atau disebut jin yang ada dalam kisah aladin dipetik dari kisah tersebut kami meluncurkan produk tshirnya</p>
+            <button>Beli Sekarang</button>
+        </div>
+        <div class="product kategori2">
+            <img src="image\4.jpg" alt="Barang 2">
+            <h3>scorpio</h3>
+            <p>kami menawarkan produk desain art scorpio</p>
+            <button>Beli Sekarang</button>
+        </div>
+        <div class="product kategori1">
+            <img src="image\BLACK FRONT (1)-Recovered.jpg" alt="Barang 3">
+            <h3>Gorila bos</h3>
+            <p>desain yang menawarkan bos gorila sedang meroko.</p>
+            <button>Beli Sekarang</button>
+        </div>
+    </section>
+
+    <section id="testimonials">
+        <h2>Testimoni Pelanggan</h2>
+        <blockquote>
+            <p>"Barangnya sangat berkualitas! Pengiriman cepat dan aman."</p>
+            <cite>- Dandi</cite>
+        </blockquote>
+        <blockquote>
+            <p>"Saya sangat puas dengan pelayanan dan produknya!"</p>
+            <cite>- uqi</cite>
+        </blockquote>
+    </section>
+
+    <section id="faq">
+        <h2>FAQ</h2>
+        <details>
+            <summary>Apakah pengiriman gratis?</summary>
+            <p>Iya, pengiriman gratis untuk pembelian di atas Rp200.000.</p>
+        </details>
+        <details>
+            <summary>Berapa lama waktu pengiriman?</summary>
+            <p>Pengiriman memakan waktu sekitar 2-5 hari kerja.</p>
+        </details>
+    </section>
+
+    <section id="products" class="fade-in">
+        <h2>Koleksi Barang</h2>
+        <div class="product" data-name="Barang 1">
+            <img src="images/barang1.jpg" alt="Barang 1">
+            <h3>Barang 1</h3>
+            <p>Deskripsi singkat tentang barang 1.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Kontak</h2>
+        <p>Email: <a href="mailto:rikirahmansah89@gmail.com">rikirahmansah892gmail.com</a></p>
+        <p>Instagram: <a href="https://instagram.com/@urbano.storeidn" target="_blank">@urbano.storeidn</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Portofolio Barang. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
